@@ -4,6 +4,14 @@
 
 In this notebook, we will explore how to load images, utilize them to train neural networks, and apply transfer learning to leverage pre-trained networks before training the neural network ourselves.
 
+## Load Dataset
+
+We'll be using a [dataset of cat and dog photos](https://www.kaggle.com/c/dogs-vs-cats). Here are a couple example images:
+
+![dog_cat.png](./dog_cat.png "dog_cat.png")
+
+We'll use this dataset to train a neural network that can differentiate between cats and dogs. 
+
 ## Transfert Learning
 You'll use networks trained on [ImageNet](http://www.image-net.org/) [available from torchvision](http://pytorch.org/docs/0.3.0/torchvision/models.html)
 
@@ -12,14 +20,6 @@ ImageNet is a massive dataset with over 1 million labeled images in 1000 categor
 Once trained, these models work astonishingly well as feature detectors for images they weren't trained on. Using a pre-trained network on images not in the training set is called transfer learning. Here we'll use transfer learning to train a network that can classify our cat and dog photos with near perfect accuracy.
 
 With `torchvision.models` you can download these pre-trained networks and use them in your applications. We'll include `models` in our imports now.
-
-## Load Dataset
-
-We'll be using a [dataset of cat and dog photos](https://www.kaggle.com/c/dogs-vs-cats). Here are a couple example images:
-
-![dog_cat.png](https://github.com/SimonFerrand/UDACITY_Cat-Dog_CNN/dog_cat.png "dog_cat.png")
-
-We'll use this dataset to train a neural network that can differentiate between cats and dogs. 
 
 ## Setup Instructions
 
